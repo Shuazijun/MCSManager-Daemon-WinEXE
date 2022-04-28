@@ -28,13 +28,12 @@ set-ExecutionPolicy RemoteSigned
 ------
 
 打包前需要对Daemon守护进程进行依赖安装（命令）
-
-```shell
 ##在Daemon所在目录鼠标右键-在终端中打开并输入以下指令
+```shell
 npm install
 ```
 
-输出exe打包（命令）
+输出exe打包（命令）首次打包会下载一个node的预编译文件,具体时间依个人网络质量而定
 
 ```shell
 pkg app.js -C GZip -t node14-win-x64
